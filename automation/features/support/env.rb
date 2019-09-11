@@ -9,10 +9,12 @@ require 'rspec/json_expectations'
 require 'rubygems'
 require 'time'
 
+require File.join(File.dirname(__FILE__), '/helpers/AddressBookCreateAddressPageHelper')
 require File.join(File.dirname(__FILE__), '/helpers/AddressBookSignUpPageHelper')
 require File.join(File.dirname(__FILE__), '/helpers/GenericPageHelper')
 require File.join(File.dirname(__FILE__), '/helpers/AddressBookSignInPageHelper')
 
+include AddressBookCreateAddressPageHelper
 include AddressBookSignInPageHelper
 include AddressBookSignUpPageHelper
 include GenericPageHelper

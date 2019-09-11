@@ -3,12 +3,10 @@ Before do
 end
 
 Before('@login') do
-    visit 'http://devcommercial.lenovo.com:8000/us/en/truscale'
-    page.should have_selector('.fromLogin #loginForm')
-    fill_in 'UserID', :with => "gatest_4@outlook.com"
-    fill_in 'Password', :with => "lenovo123"
-    find('#btnsignin').click
-       page.should have_selector('#l-navbar-title-page')
+    visit 'http://a.testaddressbook.com/sign_in'
+    fill_in 'session_email', :with => "automation_1568155575@test.com"
+    fill_in 'session_password', :with => "test123"
+    find('.btn').click
 end
 
 After do |scenario|
