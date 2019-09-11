@@ -1,7 +1,9 @@
 #encoding: utf-8
 
 Given("I have all the required variables to execute the feature: Create an account") do
-    @var = nil #
+    @user_email = nil  # user email set up
+    @user_password = nil # user password set up
+    @message_found = nil # message response
 end
   
 Given("I access the test address book sign up option") do
